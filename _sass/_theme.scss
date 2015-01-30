@@ -1,0 +1,32 @@
+
+html {
+  background: url(/assets/images/mor-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.splash__text {
+    margin-top: 25%;
+    text-align: center;
+
+
+    a:link {
+        font-color: $text-color;
+        text-decoration: underline;
+    }
+
+    a:visited {
+      color: $text-color;
+    }
+}

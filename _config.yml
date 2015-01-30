@@ -1,0 +1,12 @@
+# Site settings
+title: Midnight Oil Refinery
+email: andrew@andrewcull.io
+description: > # this means to ignore newlines until "baseurl:"
+  We are a collective of designers and developers who create elegant and beautiful content-centered, conversion-focused web design.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://midnightoilrefinery" # the base hostname & protocol for your site
+twitter_username: andrewcullio
+github_username:  midoil
+
+# Build settings
+markdown: kramdown

@@ -14,6 +14,8 @@ markdown: kramdown
 
 # Prose.io Settings
 metadata:
+siteurl: "http://midnightoilrefinery.com"
+media: "images"
     _posts:
       - name: "published"
         field:
@@ -35,5 +37,3 @@ metadata:
           label:"Categories"
           element: "text"
           value: "enter categories, separate with comma"
-
-

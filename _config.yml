@@ -13,9 +13,9 @@ markdown: kramdown
 
 # Prose.io Settings
 prose:
-metadata:
   siteurl: "http://midnightoilrefinery.com"
   media: "images"
+  metadata:
     _posts:
       - name: "published"
         field:

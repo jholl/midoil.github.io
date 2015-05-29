@@ -11,29 +11,38 @@ github_username:  midoil
 # Build settings
 markdown: kramdown
 
-# Prose.io Settings
 prose:
-  siteurl: "http://midnightoilrefinery.com"
-  media: "images"
+#  rooturl: '_posts'
+  siteurl: 'http://prose.github.io/starter/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'media'
   metadata:
     _posts:
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: "true"
       - name: "layout"
         field:
-          label: "Layout"
-          element: "text"
-          value: "post"
+          element: "hidden"
+          value: "blog"
       - name: "title"
         field:
+          element: "text"
           label: "Title"
-          element: "text"
-          value: "Write your awesome title here!"
-      - name: "categories"
+          value: ""
+      - name: "splash"
         field:
-          label:"Categories"
           element: "text"
-          value: "enter categories, separate with comma"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+            - name: "Pears"
+              value: "pears"
+            - name: "Mangos"
+              value: "mangos"

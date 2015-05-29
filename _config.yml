@@ -12,11 +12,12 @@ github_username:  midoil
 markdown: kramdown
 
 
-# Prose.io Settings
+
 prose:
+# Prose.io Settings
 metadata:
-siteurl: "http://midnightoilrefinery.com"
-media: "images"
+  siteurl: "http://midnightoilrefinery.com"
+  media: "images"
     _posts:
       - name: "published"
         field:

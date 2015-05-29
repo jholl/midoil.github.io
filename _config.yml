@@ -13,6 +13,7 @@ markdown: kramdown
 
 
 # Prose.io Settings
+prose:
 metadata:
 siteurl: "http://midnightoilrefinery.com"
 media: "images"

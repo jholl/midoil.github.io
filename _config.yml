@@ -10,3 +10,30 @@ github_username:  midoil
 
 # Build settings
 markdown: kramdown
+
+
+# Prose.io Settings
+metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "text"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "Write your awesome title here!"
+      - name: "categories"
+        field:
+          label:"Categories"
+          element: "text"
+          value: "enter categories, separate with comma"
+
+

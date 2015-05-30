@@ -1,0 +1,23 @@
+/* Post Styling */
+.post-date {
+  padding-left: 10px;
+}
+
+.post {
+  max-width: 800px;
+  margin-left: 2em;
+  margin-right: 2em;
+  color: $color-brand-primary;
+  font-family: $font-family-base;
+}
+
+.post-content {
+  a:hover {
+    color: $color-brand-primary;
+  }
+}
+
+.post-meta {
+  margin-top: -20px;
+  font-size: $font-size-small;
+}

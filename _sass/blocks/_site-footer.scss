@@ -1,1 +1,17 @@
-// Blocks are generally tied to some sort of physical place
+#site-footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: $color-brand-primary;
+
+  p {
+    font-size: $font-size-small;
+  }
+
+  a {
+    color: $color-brand-primary;
+  }
+}

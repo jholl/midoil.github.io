@@ -12,14 +12,17 @@
 
 // Import core
 @import "base";
-@import "layout";
 
 // We include components before more specific items in case we override them in a block or page
 @import "components/thumbnails";
 @import "components/syntax-highlighting";
+@import "components/images";
 
 // We include blocks after components in case we need to override a component within a specific block
+@import "blocks/scaffolding";
+@import "blocks/site-header";
 @import "blocks/site-footer";
+@import "blocks/posts";
 
 // Final tweaks and overrides
-@import "theme";
+@import "shame";

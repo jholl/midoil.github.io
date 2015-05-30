@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-<div class="container">
-  {% include head.html %}
 
-  <body>
-    <div id="header">{% include header.html %}</div>
+{% include head.html %}
 
+<body>
 
-      <div class="content" id="content">  {{ content }}   </div>
+{% include site_header.html %}
 
+<main class="content" id="content">
+    {{ content }}
+</main>
 
-  <div id="footer">
-  {% include footer.html %}
-  {% include analytics.html %}
+{% include site_footer.html %}
 
-  </div>
-  </div>
-  </body>
+<!-- /inline scripts -->
+{% include analytics.html %}
+
+</body>
 
 </html>

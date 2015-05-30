@@ -61,9 +61,12 @@ img.bg {
   margin-right: 2em;
   color: $brand-color;
   font-family: $base-font-family;
+  }
   
+.post-content {
   a: hover {
   	color: $brand-color;
+    }
 }
 
 .post-meta {

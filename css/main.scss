@@ -1,47 +1,28 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+#  Only the main Sass file needs front matter
 ---
 
-// Our variables
-$base-font-family: sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #fff;
-$background-color: #fff;
-$brand-color:      #111;
-
-$grey-color:       #AAAAAA;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    80%;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting",
-        "theme"
-;
+
+// Import the variables
+@import "variables";
+
+// Import the mixins
+@import "mixins";
+
+// Import core
+@import "base";
+
+// We include components before more specific items in case we override them in a block or page
+@import "components/thumbnails";
+@import "components/syntax-highlighting";
+@import "components/images";
+
+// We include blocks after components in case we need to override a component within a specific block
+@import "blocks/scaffolding";
+@import "blocks/site-header";
+@import "blocks/site-footer";
+@import "blocks/posts";
+
+// Final tweaks and overrides
+@import "shame";

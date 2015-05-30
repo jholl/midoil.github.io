@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-<div class="container">
-  {% include head.html %}
 
-  <body>
-    <div id="header">{% include header.html %}</div>
+{% include head.html %}
 
+<body>
 
-      <div class="content" id="content">  {{ content }}   </div>
+<main id="{{ page.title | camel }}_content" class="main">
+    {{ content }}
+</main>
 
+{% include site_footer.html %}
 
-  <div id="footer">
-  {% include footer.html %}
-  {% include analytics.html %}
+<!-- inline scripts -->
+{% include site_scripts.html %}
 
-  </div>
-  </div>
-  </body>
+</body>
 
 </html>

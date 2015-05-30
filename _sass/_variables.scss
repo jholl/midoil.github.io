@@ -1,0 +1,52 @@
+// =======================================
+// Variable colors
+// =======================================
+
+$color-grey: #aaa;
+$color-grey-light: lighten($color-grey, 40%);
+$color-grey-dark: darken($color-grey, 25%);
+
+// =======================================
+// Brand colors
+// =======================================
+
+$color-brand-orange: #ff7320;
+$color-brand-yellow: #fff000;
+$color-brand-primary: #111;
+
+// =======================================
+// Scaffolding & Layout
+// =======================================
+
+$percent-content-width: 80%;
+$background-color-base: #fff;
+$margin-base-vertical: 15px;
+$margin-base-horizontal: 15px;
+$margin-base: $margin-base-vertical $margin-base-horizontal;
+$padding-base-vertical: 10px;
+$padding-base-horizontal: 10px;
+$padding-base: $padding-base-vertical $padding-base-horizontal;
+
+// =======================================
+// Typography
+// =======================================
+
+$font-family-base: sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-size-small: $font-size-base * 0.875;
+$color-text-base: #fff;
+
+$color-links-base: $color-brand-orange;
+$color-links-base-hover: darken($color-links-base, 10%);
+$color-links-base-visited: $color-links-base;
+
+$background-color-pre: #eef;
+
+// =======================================
+// Helpers
+// =======================================
+
+$pixel-size-spacing: 30px;
+
+

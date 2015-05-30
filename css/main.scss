@@ -1,9 +1,6 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: sans-serif;
@@ -22,7 +19,7 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    100%;
+$content-width:    80%;
 
 
 

@@ -1,32 +1,69 @@
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
 
-html {
-  background: url(http://midnightoilrefinery.com/assets/images/mor-background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background: 100% 100%
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Layer underneath */
+  z-index: -1;
 }
 
-body {
-    margin: 0 auto;
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
 
-.container {
-    margin-left: 10%;
-    margin-right: 10%
-}
-
-.splash__text {
+.main-page {
     margin-top: 25%;
     text-align: center;
+    color: $text-color;
 
+    article a {
+      color: $text-color;
+    }
 
     a:link {
         font-color: $text-color;
         text-decoration: underline;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
     a:visited {
       color: $text-color;
     }
+
+    h3 {
+      font-size: $small-font-size;
+    }
+}
+
+.post-date {
+  padding-left: 10px;
+}
+
+.post-container {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.post {
+  max-width: 800px;
+  margin-left: 2em;
+  margin-right: 2em;
+  color: $brand-color;
+  font-family: $base-font-family;
 }

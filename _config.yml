@@ -1,10 +1,11 @@
 # Site settings
 title: Midnight Oil Refinery
 email: andrew@andrewcull.io
-description: > # this means to ignore newlines until "baseurl:"
+description:
   We are a collective of designers and developers who create elegant and beautiful content-centered, conversion-focused web design.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://midnightoilrefinery.com" # the base hostname & protocol for your site
+permalink: /articles/:title
+url: "localhost:4000" # the base hostname & protocol for your site
 twitter_username: andrewcullio
 github_username:  midoil
 
@@ -31,3 +32,11 @@ prose:
         field:
           element: "text"
           label: "Add Tags"
+
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md

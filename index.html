@@ -3,8 +3,21 @@ layout: default
 title: The Midnight Oil Refinery
 ---
 
-<div class="splash__text">
+
+
+<img class="bg" src="images/mor-background.jpg">
+<div class="main-page">
+
 <h1>The Midnight Oil Refinery</h1>
 <p>A collaborative effort of <a href="http://andrewcull.io">Andrew</a> and  <a href="http://turnupworks.com">James</a> to build elegant, conversion-focused sites while giving back to the open-source community.</p>
-<a href="http://github.com/midoil"><img src="/assets/images/github-icon.png" style="max-width: 48px; height: auto;"></a>
+<h2>Articles</h2>
+{% for post in site.posts %}
+  <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+			<h3><a href="{{ post.url }}" class="post-title">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span></h3>
+	</article>
+	{% if forloop.last %}{% else %}
+  {% endif %}
+{% endfor %}
+<a href="http://github.com/midoil"><img src="/images/github-icon.png" style="max-width: 48px; height: auto;"></a>
+</div>
 </div>

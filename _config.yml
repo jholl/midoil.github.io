@@ -14,9 +14,8 @@ markdown: kramdown
 
 prose:
 #  rooturl: '_posts'
-  siteurl: 'http://prose.github.io/starter/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
-  media: 'media'
+  siteurl: 'http://midnightoilrefinery.com/'
+  media: 'images'
   metadata:
     _posts:
       - name: "layout"
@@ -28,10 +27,16 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "tags"
+      - name: "author"
         field:
-          element: "text"
-          label: "Add Tags"
+          element: "multiselect"
+          label: "Author"
+          placeholder: "Select Author"
+          options:
+            - name: "Andrew"
+              value: "Andrew"
+            - name: "James"
+              value: "James"
 
 
 # Exclude these files from your production _site

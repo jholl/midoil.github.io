@@ -16,37 +16,38 @@ img.bg {
   z-index: -1;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
   img.bg {
     left: 50%;
-    margin-left: -512px;   /* 50% */
+    margin-left: -512px; /* 50% */
   }
 }
 
 .main-page {
-    margin-top: 25%;
-    text-align: center;
+  margin-top: 25%;
+  text-align: center;
 
-    article a {
-      color: $text-color;
-    }
+  article a {
+    color: $text-color;
+  }
 
-    a:link {
-        font-color: $text-color;
-        text-decoration: underline;
-    }
+  a:link {
+    font-color: $text-color;
+    text-decoration: underline;
+  }
 
-    a:hover {
-        text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 
-    a:visited {
-      color: $text-color;
-    }
+  a:visited {
+    color: $text-color;
+  }
 
-    h3 {
-      font-size: $small-font-size;
-    }
+  h3 {
+    font-size: $small-font-size;
+  }
 }
 
 /* Post Styling */
@@ -54,19 +55,18 @@ img.bg {
   padding-left: 10px;
 }
 
-
 .post {
   max-width: 800px;
   margin-left: 2em;
   margin-right: 2em;
   color: $brand-color;
   font-family: $base-font-family;
-  }
-  
+}
+
 .post-content {
   a:hover {
-  	color: $brand-color;
-    }
+    color: $brand-color;
+  }
 }
 
 .post-meta {
@@ -75,11 +75,11 @@ img.bg {
 }
 
 /* Footer Styling */
-.site-footer {
+#site-footer {
   text-align: center;
   color: $brand-color;
   p {
-  font-size: $small-font-size;
+    font-size: $small-font-size;
   }
 
   a {

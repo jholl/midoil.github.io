@@ -6,19 +6,31 @@ body {
   .site-content {
     height: calc(100vh - 40px);
     @include flex();
-    flex-direction: row;
+    flex-direction: column;
+
+    .site-sidebar,
+    .site-main,
+    .blog-sidebar {
+      width: 100%;
+    }
   }
 
-  .site-sidebar {
-    width: 25%;
-  }
+  @include mq-up($screen-md-min) {
+    .site-content {
+      flex-direction: row;
+    }
 
-  .site-main {
-    width: 55%;
-  }
+    .site-sidebar {
+      width: 25%;
+    }
 
-  .blog-sidebar {
-    width: 20%;
+    .site-main {
+      width: 55%;
+    }
+
+    .blog-sidebar {
+      width: 20%;
+    }
   }
 }
 

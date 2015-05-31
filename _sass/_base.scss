@@ -134,16 +134,9 @@ pre {
 }
 
 /**
- * Clearfix
+ * Clearfix found within mixins
+ * use @import clearfix();
  */
-%clearfix {
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
 
 /**
  * Icons

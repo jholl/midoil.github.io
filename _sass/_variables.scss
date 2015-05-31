@@ -10,9 +10,30 @@ $color-grey-dark: darken($color-grey, 25%);
 // Brand colors
 // =======================================
 
-$color-brand-orange: #ff7320;
+$color-brand-orange: #ef5a2a;
 $color-brand-yellow: #fff000;
+$color-brand-navy: #151a2c;
+
 $color-brand-primary: #111;
+
+// =======================================
+// Responsive
+// =======================================
+
+// Extra small screen / phone
+$screen-xs-min: 0px;
+$screen-xs-max: 480px;
+
+// Small screen / tablet
+$screen-sm-min: ($screen-xs-max + 1);
+$screen-sm-max: 768px;
+
+// Medium screen / desktop
+$screen-md-min: ($screen-sm-max + 1);
+$screen-md-max: 992px;
+
+$screen-lg-min: ($screen-md-max + 1);
+$screen-lg-max: 4000px;
 
 // =======================================
 // Scaffolding & Layout
@@ -31,7 +52,7 @@ $padding-base: $padding-base-vertical $padding-base-horizontal;
 // Typography
 // =======================================
 
-$font-family-base: sans-serif;
+$font-family-base: 'Roboto', sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.5;
 $font-size-small: $font-size-base * 0.875;

@@ -5,11 +5,23 @@
 
 <body>
 
-<main id="splash_content" class="main">
-    {{ content }}
-</main>
+<img class="img-background" src="/img/mor-background.jpg">
 
-{% include site_footer.html %}
+<div class="site-content">
+
+    {% include site_sidebar.html %}
+
+    <main class="site-main">
+        {{ content }}
+    </main>
+
+    {% include blog_sidebar.html %}
+
+</div>
+
+<div class="site-footer">
+    {% include site_footer.html %}
+</div>
 
 <!-- inline scripts -->
 {% include site_scripts.html %}

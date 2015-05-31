@@ -1,0 +1,17 @@
+@mixin mq-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-between($breakpoint_low, $breakpoint_high) {
+  @media (min-width: $breakpoint_low) and (max-width: $breakpoint_hight) {
+    @content;
+  }
+}

@@ -17,10 +17,9 @@ img {
     /* Layer underneath */
     z-index: -1;
 
-    @media screen and (max-width: 1024px) {
+    @include mq-down($screen-md-max) {
       left: 50%;
       margin-left: -512px; /* 50% */
     }
-
   }
 }

@@ -1,17 +1,35 @@
-#site-footer {
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  color: $color-brand-primary;
+.site-footer {
+  font-size: $font-size-small;
+  padding: 10px $padding-base-horizontal;
+  background-color: rgba($color-brand-primary, .55);
 
-  p {
-    font-size: $font-size-small;
+  footer {
+    display: flex;
+    flex-direction: row;
+
+    > div {
+      width: 33.333%;
+      text-align: center;
+
+      @include mq-up($screen-md-min) {
+        &:first-of-type {
+          text-align: left;
+        }
+        &:last-of-type {
+          text-align: right;
+        }
+      }
+    }
+
   }
 
-  a {
-    color: $color-brand-primary;
+  .copyright {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 85%;
+  }
+
+  .icon-brand-github {
+    @include square(23px);
   }
 }

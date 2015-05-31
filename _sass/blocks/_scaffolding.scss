@@ -1,24 +1,24 @@
-#container {
-  min-height: 100%;
-  position: relative;
-}
+// Sticky footer with flex
+body {
+  @include flex();
+  flex-direction: column;
 
-.main {
-  padding-bottom: 100px; /* Height of the footer element */
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-// This needs to move... where?
-.main-page {
-  margin-top: 25%;
-  text-align: center;
-
-  article a {
-    color: $color-text-base;
+  .site-content {
+    height: calc(100vh - 40px);
+    @include flex();
+    flex-direction: row;
   }
 
-  h3 {
-    font-size: $font-size-small;
+  .site-sidebar {
+    width: 25%;
+  }
+
+  .site-main {
+    width: 55%;
+  }
+
+  .blog-sidebar {
+    width: 20%;
   }
 }
+

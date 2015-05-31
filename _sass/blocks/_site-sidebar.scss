@@ -1,0 +1,37 @@
+.site-sidebar {
+  position: relative;
+
+  .sidebar-brand {
+
+    a {
+      text-decoration: none;
+    }
+
+    .site-title {
+      display: block;
+      margin-bottom: $margin-base-horizontal;
+      color: lighten($color-brand-orange, 5%);
+      text-shadow: 0 2px 10px rgba(darken($color-brand-orange, 5%), 1);
+      font-size: inherit;
+      font-weight: bold;
+      padding: $padding-base;
+    }
+  }
+
+  .sidebar-content {
+    padding: $padding-base;
+    font-size: 85%;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #fff;
+    position: absolute;
+    bottom: -15px;
+
+    a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+

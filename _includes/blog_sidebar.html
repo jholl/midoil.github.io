@@ -1,0 +1,17 @@
+<aside class="blog-sidebar">
+    {% if site.posts %}
+    <h2>Articles</h2>
+    {% for post in site.posts %}
+    {% assign active = '' %}
+    {% if page.url == post.url %}
+    {% assign active = 'active' %}
+    {% endif %}
+    <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+        <a href="{{ post.url }}" class="post-link {{ active }}">
+            <h3 class="post-title">{{ post.title }}</h3>
+            <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
+        </a>
+    </article>
+    {% endfor %}
+    {% endif %}
+</aside>

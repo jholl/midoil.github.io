@@ -1,0 +1,40 @@
+.blog-sidebar {
+  text-align: right;
+
+  h2 {
+    font-size: inherit;
+    font-weight: bold;
+    padding: $padding-base;
+  }
+
+  > article {
+    font-weight: 200;
+
+    .post-link {
+      display: block;
+      padding: $padding-base;
+      text-decoration: none;
+      @include transition(all .25s ease-in-out);
+
+      .post-title {
+        // unset base h3 properties
+        font-size: inherit;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .post-date {
+        color: $color-grey;
+        font-size: $font-size-small;
+      }
+    }
+
+    .post-link:hover {
+      background-color: lighten($color-brand-navy,15%);
+    }
+
+    .post-link.active {
+      background-color: #fff;
+    }
+  }
+}

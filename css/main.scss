@@ -1,5 +1,5 @@
 ---
-#  Only the main Sass file needs front matter
+#Only the main Sass file needs front matter
 ---
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -17,11 +17,14 @@
 @import "components/thumbnails";
 @import "components/syntax-highlighting";
 @import "components/images";
+@import "components/responsive";
 
 // We include blocks after components in case we need to override a component within a specific block
 @import "blocks/scaffolding";
 @import "blocks/site-header";
 @import "blocks/site-footer";
+@import "blocks/site-sidebar";
+@import "blocks/blog-sidebar";
 @import "blocks/posts";
 
 // Final tweaks and overrides

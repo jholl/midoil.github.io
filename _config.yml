@@ -1,11 +1,12 @@
 # Site settings
-title: Midnight Oil Refinery
+title: The Midnight Oil Refinery
 email: andrew@andrewcull.io
 description:
   We are a collective of designers and developers who create elegant and beautiful content-centered, conversion-focused web design.
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: /articles/:title
 url: "localhost:4000" # the base hostname & protocol for your site
+data_source: ./_data
 twitter_username: andrewcullio
 github_username:  midoil
 

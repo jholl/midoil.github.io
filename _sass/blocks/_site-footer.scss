@@ -1,17 +1,37 @@
 .site-footer {
   font-size: $font-size-small;
   padding: 10px $padding-base-horizontal;
-  background-color: rgba($color-brand-primary, .55);
+  background-color: rgba($color-brand-primary, .85);
+  z-index: 1000;
+  @include transition(opacity $transition-speed-base $transition-timing-function-base);
+
+  @include mq-up($screen-md-min) {
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   footer {
+    @include max-container();
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     > div {
-      width: 33.333%;
+      width: 100%;
       text-align: center;
+      @include mq-down($screen-sm-max) {
+        margin-bottom: $margin-base-vertical;
+      }
+    }
 
-      @include mq-up($screen-md-min) {
+    @include mq-up($screen-md-min) {
+      flex-direction: row;
+
+      > div {
+        width: 33.333%;
+
         &:first-of-type {
           text-align: left;
         }
@@ -20,7 +40,6 @@
         }
       }
     }
-
   }
 
   .copyright {

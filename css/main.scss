@@ -27,5 +27,8 @@
 @import "blocks/blog-sidebar";
 @import "blocks/posts";
 
+// We include pages after the rest for specific overrides
+@import "pages/splash";
+
 // Final tweaks and overrides
 @import "shame";

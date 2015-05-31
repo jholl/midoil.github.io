@@ -1,0 +1,4 @@
+@mixin max-container($max-width: $screen-lg-min) {
+  max-width: $max-width;
+  margin: 0 auto;
+}

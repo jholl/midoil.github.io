@@ -11,8 +11,8 @@ $color-grey-dark: darken($color-grey, 25%);
 // =======================================
 
 $color-brand-orange: #ef5a2a;
-$color-brand-yellow: #fff000;
-$color-brand-navy: #001f3f; //#151a2c;
+$color-brand-yellow: #efff81; //#fff000;
+$color-brand-navy: #0f1327;
 
 $color-brand-primary: #111;
 
@@ -30,10 +30,17 @@ $screen-sm-max: 768px;
 
 // Medium screen / desktop
 $screen-md-min: ($screen-sm-max + 1);
-$screen-md-max: 992px;
+$screen-md-max: 1450px;
 
 $screen-lg-min: ($screen-md-max + 1);
 $screen-lg-max: 4000px;
+
+// =======================================
+// Animations & Transform
+// =======================================
+
+$transition-speed-base: .35s;
+$transition-timing-function-base: ease-in-out;
 
 // =======================================
 // Scaffolding & Layout

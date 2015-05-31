@@ -1,20 +1,59 @@
 .blog-sidebar {
   text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, .35);
 
   h2 {
     font-size: inherit;
     font-weight: bold;
     padding: $padding-base;
+    color: darken($color-brand-orange, 15%);
   }
 
-  > article {
+  // On sidebar hover effects
+  @include mq-up($screen-md-min) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+
+    width: 100px;
+    height: calc(100vh - 40px);
+
+    .blog-offcanvas {
+      position: absolute;
+      margin-right: -250px;
+      width: 250px;
+      @include transition(all $transition-speed-base $transition-timing-function-base);
+    }
+
+    article {
+      @include transition(opacity $transition-speed-base $transition-timing-function-base);
+      opacity: 0;
+    }
+
+    &:hover {
+      min-width: 250px;
+
+      .blog-offcanvas {
+        margin-right: 0;
+      }
+
+      article {
+        opacity: 1;
+      }
+    }
+  }
+
+  // Article styling
+  article {
     font-weight: 200;
 
     .post-link {
       display: block;
       padding: $padding-base;
       text-decoration: none;
-      @include transition(all .25s ease-in-out);
+      @include transition(background-color $transition-speed-base $transition-timing-function-base);
 
       .post-title {
         // unset base h3 properties
@@ -30,7 +69,7 @@
     }
 
     .post-link:hover {
-      background-color: lighten($color-brand-navy,15%);
+      background-color: rgba($color-brand-navy, .85);
     }
 
     .post-link.active {

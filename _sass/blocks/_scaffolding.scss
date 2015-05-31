@@ -1,36 +1,68 @@
-// Sticky footer with flex
+// Offcanvas
 body {
-  @include flex();
-  flex-direction: column;
+  overflow-x: hidden;
+}
 
-  .site-content {
-    height: calc(100vh - 40px);
-    @include flex();
-    flex-direction: column;
+// Sticky footer... at the right time
+@include mq-down($screen-md-min) {
+  body {
+    @include flex(column);
+  }
+}
 
-    .site-sidebar,
-    .site-main,
-    .blog-sidebar {
-      width: 100%;
-    }
+@include mq-up($screen-md-min) {
+  body {
+    position: relative;
   }
 
-  @include mq-up($screen-md-min) {
-    .site-content {
-      flex-direction: row;
-    }
+  .site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
 
-    .site-sidebar {
-      width: 25%;
-    }
+// Mobile-first flex content (stack, then row)
+.site-content {
+  @include max-container();
+  @include flex(column);
+  min-height: 100vh;
+}
 
-    .site-main {
-      width: 55%;
-    }
+.site-sidebar,
+.site-main,
+.blog-sidebar {
+  width: 100%;
+  height: 100%;
+  @include transition(all $transition-speed-base $transition-timing-function-base);
+  margin-bottom: ($margin-base-vertical * 2);
+}
 
-    .blog-sidebar {
-      width: 20%;
-    }
+@include mq-up($screen-md-min) {
+  .site-content {
+    flex-direction: row;
+  }
+
+  .site-sidebar,
+  .site-main,
+  .blog-sidebar {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .site-sidebar {
+    width: 150px;
+  }
+
+  .site-main {
+    // delay to account for offcanvas spanning initial sidebar
+    transition-delay: .1s;
+  }
+
+  .post-container {
+    height: 100vh;
+    overflow-y: scroll;
   }
 }
 

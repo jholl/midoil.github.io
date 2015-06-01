@@ -2,9 +2,9 @@
     <div class="sidebar-brand">
         <a href="/">
             {% if page.url == '/index.html' %}
-            <h1 class="site-title">The Midnight Oil Refinery</h1>
+            <h1 class="site-title">{{ site.title }}</h1>
             {% else %}
-            <span class="site-title">The Midnight Oil Refinery</span>
+            <span class="site-title">{{ site.title }}</span>
             {% endif %}
         </a>
     </div>

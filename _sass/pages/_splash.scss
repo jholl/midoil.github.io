@@ -2,6 +2,10 @@
 
   .site-sidebar {
     background-color: transparent;
+
+    > * {
+      opacity: 1;
+    }
   }
 }
 

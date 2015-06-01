@@ -16,18 +16,19 @@
   font-family: sans-serif;
 
   @include mq-up($screen-md-min) {
-    margin-top: 150px;
+    //margin-top: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 75px;
   }
 
   .splash-title {
     margin-top: 125px;
     color: $color-brand-orange;
-//    font-size: $font-size-base * 2;
-    text-shadow:
-     2px 2px 0px $color-brand-navy,
-     4px 4px 0px rgba(0, 0, 0, 0.2)
-
-
+    //    font-size: $font-size-base * 2;
+    text-shadow: 2px 2px 0px $color-brand-navy,
+    4px 4px 0px rgba(0, 0, 0, 0.2)
 
   }
 

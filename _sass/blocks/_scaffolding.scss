@@ -34,14 +34,14 @@ body {
 .site-main,
 .blog-sidebar {
   width: 100%;
-  height: 100%;
+  height: auto;
   @include transition(all $transition-speed-base $transition-timing-function-base);
   margin-bottom: ($margin-base-vertical * 2);
 }
 
 @include mq-up($screen-md-min) {
   .site-content {
-    flex-direction: row;
+    @include flex-direction(row);
   }
 
   .site-sidebar,

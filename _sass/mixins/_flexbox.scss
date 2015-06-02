@@ -1,8 +1,13 @@
+@mixin flex-direction($direction: column) {
+  -webkit-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
 @mixin flex($direction: column) {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-direction: $direction;
+  @include flex-direction($direction);
 }

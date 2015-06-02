@@ -15,8 +15,7 @@
 
   footer {
     @include max-container();
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
 
     > div {
       width: 100%;
@@ -27,7 +26,7 @@
     }
 
     @include mq-up($screen-md-min) {
-      flex-direction: row;
+      @include flex-direction(row);
 
       > div {
         width: 33.333%;
